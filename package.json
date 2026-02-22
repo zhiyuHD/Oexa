@@ -15,6 +15,7 @@
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "mdui": "^2.1.4",
     "vue": "beta"
   },
   "devDependencies": {
