@@ -1,0 +1,22 @@
+{
+  "slug": "hello-world",
+  "url": "/posts/hello-world",
+  "title": "你好，世界！",
+  "date": "2026-02-23",
+  "updated": "2026-02-23",
+  "categories": [],
+  "tags": [
+    "测试",
+    "博客"
+  ],
+  "description": "这是我的第一篇博客文章，欢迎来到我的博客！",
+  "keywords": [],
+  "author": "博主",
+  "layout": "post",
+  "comments": false,
+  "toc": true,
+  "content": "\n# 你好，世界！\n\n欢迎来到我的博客！这是使用 Oexa 构建的第一篇文章。\n\n## 关于 Oexa\n\nOexa 是一个基于 Vue 3 + Vite 的静态博客生成器，特点：\n\n- 🚀 快速 - 基于 Vite 构建\n- 🎨 美观 - 使用 MDUI 组件库\n- 📝 简单 - 使用 Markdown 写作\n- 🔧 灵活 - 支持自定义主题\n\n## 代码示例\n\n```javascript\nfunction hello() {\n  console.log('Hello, Oexa!');\n}\n```\n\n## 数学公式\n\n这是一个行内公式 $E = mc^2$。\n\n这是一个块级公式：\n\n$$\n\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}\n$$\n\n## 总结\n\n感谢阅读！希望你喜欢这个博客系统。\n",
+  "raw": "\n# 你好，世界！\n\n欢迎来到我的博客！这是使用 Oexa 构建的第一篇文章。\n\n## 关于 Oexa\n\nOexa 是一个基于 Vue 3 + Vite 的静态博客生成器，特点：\n\n- 🚀 快速 - 基于 Vite 构建\n- 🎨 美观 - 使用 MDUI 组件库\n- 📝 简单 - 使用 Markdown 写作\n- 🔧 灵活 - 支持自定义主题\n\n## 代码示例\n\n```javascript\nfunction hello() {\n  console.log('Hello, Oexa!');\n}\n```\n\n## 数学公式\n\n这是一个行内公式 $E = mc^2$。\n\n这是一个块级公式：\n\n$$\n\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}\n$$\n\n## 总结\n\n感谢阅读！希望你喜欢这个博客系统。\n",
+  "readingTime": 1,
+  "wordCount": 134
+}

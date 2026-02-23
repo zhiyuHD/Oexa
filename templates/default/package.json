@@ -1,0 +1,19 @@
+{
+  "name": "my-blog",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "oexa dev",
+    "build": "oexa build",
+    "preview": "oexa preview",
+    "generate": "oexa generate"
+  },
+  "dependencies": {
+    "oexa": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vite": "^6.0.0"
+  }
+}

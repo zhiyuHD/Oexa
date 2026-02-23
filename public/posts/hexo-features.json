@@ -1,0 +1,29 @@
+{
+  "slug": "hexo-features",
+  "url": "/posts/hexo-features",
+  "title": "Hexo 语法兼容示例",
+  "date": "2026-02-20",
+  "updated": "2026-02-20",
+  "categories": [
+    "教程"
+  ],
+  "tags": [
+    "Hexo",
+    "Markdown",
+    "Oexa"
+  ],
+  "description": "展示 Oexa 对 Hexo 标签插件的兼容支持，帮助你从 Hexo 无缝迁移。",
+  "keywords": [
+    "Hexo迁移",
+    "博客"
+  ],
+  "author": "博主",
+  "layout": "post",
+  "comments": false,
+  "toc": true,
+  "content": "\n# Hexo 语法兼容示例\n\n本文展示 Oexa 对 Hexo 标签插件的兼容支持。\n\n## 引用块\n\n<blockquote>这是一段引用文字，可以包含作者和来源信息。<footer><strong>张三</strong>，《《某本书》》</footer></blockquote>\n\n## 代码块\n\n<div class=\"code-block line-numbers\"><div class=\"code-title\">JavaScript</div><pre><code class=\"language-lang:javascript\">function hello(name) {\n  console.log(`Hello, ${name}!`);\n}\n\nhello(&#039;Oexa&#039;);</code></pre></div>\n\n## 图片\n\n<img src=\"/assets/example.jpg\" class=\"/assets/example.jpg\" loading=\"lazy\">\n\n## 链接\n\n<a href=\"GitHub\" title=\"true\">访问</a>\n\n## 文章引用\n\n<a href=\"/posts/hello-world\">查看第一篇文章</a>\n\n## 折叠内容\n\n<details><summary>点击展开更多内容</summary><div class=\"fold-content\">这里是折叠的内容，默认是收起状态。\n\n可以包含多行文字，甚至代码：\n\n```javascript\nconst foo = 'bar';\n```</div></details>\n\n<details><summary>默认展开</summary><div class=\"fold-content\">这个折叠块默认是展开的。</div></details>\n\n## Note 提示框\n\n<div class=\"note note-primary\"><span class=\"note-icon\"><mdui-icon name=\"info\"></mdui-icon></span><div class=\"note-content\">这是一个主要提示框。</div></div>\n\n<div class=\"note note-success\"><span class=\"note-icon\"><mdui-icon name=\"check_circle\"></mdui-icon></span><div class=\"note-content\">这是一个成功提示框。</div></div>\n\n<div class=\"note note-warning\"><span class=\"note-icon\"><mdui-icon name=\"warning\"></mdui-icon></span><div class=\"note-content\">这是一个警告提示框。</div></div>\n\n<div class=\"note note-danger\"><span class=\"note-icon\"><mdui-icon name=\"error\"></mdui-icon></span><div class=\"note-content\">这是一个危险提示框。</div></div>\n\n<div class=\"note note-info\"><div class=\"note-content\">这是一个没有图标的提示框。</div></div>\n\n## Label 标签\n\n这是一个 <span class=\"label label-primary\">主要标签</span> 和 <span class=\"label label-danger\">危险标签</span>，还有 <span class=\"label label-success\">成功标签</span>。\n\n## 按钮\n\n<a href=\"/posts\" class=\"btn\"><span class=\"btn-icon\">article</span>浏览文章</a>\n\n## 视频\n\n<video controls><source src=\"https://example.com/video.mp4\" type=\"video/mp4\"></video>\n\n## 文章摘要\n\n<div class=\"read-more-break\"></div>\n\n在 `<div class=\"read-more-break\"></div>` 之前的内容会作为文章摘要显示在列表页。\n\n## 更多功能\n\nOexa 还支持：\n\n- 数学公式（KaTeX）\n- 代码高亮\n- 任务列表\n- 脚注\n- 表格\n\n### 表格示例\n\n| 功能 | 状态 | 说明 |\n|------|------|------|\n| Markdown | ✅ | 完整支持 |\n| Hexo 标签 | ✅ | 大部分兼容 |\n| 数学公式 | ✅ | KaTeX |\n| 代码高亮 | ✅ | 多主题 |\n\n### 任务列表示例\n\n- [x] 支持 Hexo 标签\n- [x] 支持配置文件\n- [x] 支持分类和标签\n- [ ] 支持评论系统\n- [ ] 支持 RSS\n\n### 脚注示例\n\n这是一个脚注引用[^1]，还有另一个[^2]。\n\n[^1]: 这是第一个脚注的内容。\n[^2]: 这是第二个脚注的内容。\n\n## 总结\n\nOexa 致力于提供与 Hexo 兼容的写作体验，让你可以轻松迁移现有博客。\n",
+  "raw": "\n# Hexo 语法兼容示例\n\n本文展示 Oexa 对 Hexo 标签插件的兼容支持。\n\n## 引用块\n\n{% blockquote 张三 《某本书》 %}\n这是一段引用文字，可以包含作者和来源信息。\n{% endblockquote %}\n\n## 代码块\n\n{% codeblock JavaScript lang:javascript line_number:true %}\nfunction hello(name) {\n  console.log(`Hello, ${name}!`);\n}\n\nhello('Oexa');\n{% endcodeblock %}\n\n## 图片\n\n{% img /assets/example.jpg 这是一张示例图片 %}\n\n## 链接\n\n{% link 访问 GitHub https://github.com true %}\n\n## 文章引用\n\n{% post_link hello-world 查看第一篇文章 %}\n\n## 折叠内容\n\n{% fold 点击展开更多内容 %}\n这里是折叠的内容，默认是收起状态。\n\n可以包含多行文字，甚至代码：\n\n```javascript\nconst foo = 'bar';\n```\n{% endfold %}\n\n{% fold 默认展开 open:true %}\n这个折叠块默认是展开的。\n{% endfold %}\n\n## Note 提示框\n\n{% note primary %}\n这是一个主要提示框。\n{% endnote %}\n\n{% note success %}\n这是一个成功提示框。\n{% endnote %}\n\n{% note warning %}\n这是一个警告提示框。\n{% endnote %}\n\n{% note danger %}\n这是一个危险提示框。\n{% endnote %}\n\n{% note info no-icon %}\n这是一个没有图标的提示框。\n{% endnote %}\n\n## Label 标签\n\n这是一个 {% label primary@主要标签 %} 和 {% label danger@危险标签 %}，还有 {% label success@成功标签 %}。\n\n## 按钮\n\n{% button /posts 浏览文章 article %}\n\n## 视频\n\n{% video https://example.com/video.mp4 video/mp4 %}\n\n## 文章摘要\n\n<!-- more -->\n\n在 `<!-- more -->` 之前的内容会作为文章摘要显示在列表页。\n\n## 更多功能\n\nOexa 还支持：\n\n- 数学公式（KaTeX）\n- 代码高亮\n- 任务列表\n- 脚注\n- 表格\n\n### 表格示例\n\n| 功能 | 状态 | 说明 |\n|------|------|------|\n| Markdown | ✅ | 完整支持 |\n| Hexo 标签 | ✅ | 大部分兼容 |\n| 数学公式 | ✅ | KaTeX |\n| 代码高亮 | ✅ | 多主题 |\n\n### 任务列表示例\n\n- [x] 支持 Hexo 标签\n- [x] 支持配置文件\n- [x] 支持分类和标签\n- [ ] 支持评论系统\n- [ ] 支持 RSS\n\n### 脚注示例\n\n这是一个脚注引用[^1]，还有另一个[^2]。\n\n[^1]: 这是第一个脚注的内容。\n[^2]: 这是第二个脚注的内容。\n\n## 总结\n\nOexa 致力于提供与 Hexo 兼容的写作体验，让你可以轻松迁移现有博客。\n",
+  "cover": "https://picsum.photos/800/400",
+  "readingTime": 3,
+  "wordCount": 627
+}

@@ -1,0 +1,93 @@
+{
+  "site": {
+    "title": "Oexa Blog",
+    "subtitle": "记录生活，分享技术",
+    "description": "一个基于 Vue 3 + Vite 的静态博客",
+    "author": "博主",
+    "email": "example@example.com",
+    "url": "https://example.com",
+    "language": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "theme": {
+    "mode": "dark",
+    "primaryColor": "#6750A4",
+    "borderRadius": "medium"
+  },
+  "nav": [
+    {
+      "name": "主页",
+      "path": "/",
+      "icon": "home"
+    },
+    {
+      "name": "文章",
+      "path": "/posts",
+      "icon": "article"
+    },
+    {
+      "name": "标签",
+      "path": "/tags",
+      "icon": "label"
+    },
+    {
+      "name": "归档",
+      "path": "/archives",
+      "icon": "archive"
+    },
+    {
+      "name": "关于",
+      "path": "/about",
+      "icon": "person"
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "icon": "code",
+      "url": "https://github.com"
+    },
+    {
+      "name": "Twitter",
+      "icon": "chat",
+      "url": "https://twitter.com"
+    },
+    {
+      "name": "Email",
+      "icon": "mail",
+      "url": "mailto:example@example.com"
+    }
+  ],
+  "post": {
+    "showReadingTime": true,
+    "showWordCount": true,
+    "showToc": true
+  },
+  "home": {
+    "hero": {
+      "title": "欢迎来到我的博客",
+      "subtitle": "记录生活，分享技术",
+      "background": "",
+      "showActions": true
+    },
+    "recentPosts": 5,
+    "showTags": true,
+    "tagCloudCount": 20
+  },
+  "footer": {
+    "since": 2024,
+    "icp": "",
+    "customHtml": ""
+  },
+  "features": {
+    "search": true,
+    "comment": false,
+    "share": true,
+    "rss": false,
+    "sitemap": true,
+    "analytics": {
+      "enabled": false,
+      "id": ""
+    }
+  }
+}

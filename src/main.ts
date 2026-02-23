@@ -2,7 +2,10 @@ import "./assets/main.css";
 
 import { createApp } from "vue";
 import App from "./App.vue";
+import router from "./router";
 import 'mdui/mdui.css';
 import 'mdui';
-document.documentElement.classList.add('mdui-theme-dark');
-createApp(App).mount("#app");
+
+const app = createApp(App);
+app.use(router);
+app.mount("#app");

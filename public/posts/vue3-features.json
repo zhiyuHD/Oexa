@@ -1,0 +1,22 @@
+{
+  "slug": "vue3-features",
+  "url": "/posts/vue3-features",
+  "title": "Vue 3 新特性介绍",
+  "date": "2026-02-22",
+  "updated": "2026-02-22",
+  "categories": [],
+  "tags": [
+    "Vue",
+    "前端"
+  ],
+  "description": "介绍 Vue 3 的主要新特性，包括 Composition API、Teleport 等。",
+  "keywords": [],
+  "author": "博主",
+  "layout": "post",
+  "comments": false,
+  "toc": true,
+  "content": "\n# Vue 3 新特性介绍\n\nVue 3 带来了许多令人兴奋的新特性，让我们一起来了解。\n\n## Composition API\n\nComposition API 是 Vue 3 最重要的新特性之一：\n\n```vue\n<script setup>\nimport { ref, computed } from 'vue'\n\nconst count = ref(0)\nconst doubled = computed(() => count.value * 2)\n\nfunction increment() {\n  count.value++\n}\n</script>\n\n<template>\n  <button @click=\"increment\">\n    Count: {{ count }} (doubled: {{ doubled }})\n  </button>\n</template>\n```\n\n## Teleport\n\nTeleport 允许我们将组件渲染到 DOM 的其他位置：\n\n```vue\n<teleport to=\"body\">\n  <div class=\"modal\">\n    这是一个模态框\n  </div>\n</teleport>\n```\n\n## Fragments\n\nVue 3 支持多个根节点：\n\n```vue\n<template>\n  <header>...</header>\n  <main>...</main>\n  <footer>...</footer>\n</template>\n```\n\n## 总结\n\nVue 3 的这些新特性让开发更加灵活和高效！\n",
+  "raw": "\n# Vue 3 新特性介绍\n\nVue 3 带来了许多令人兴奋的新特性，让我们一起来了解。\n\n## Composition API\n\nComposition API 是 Vue 3 最重要的新特性之一：\n\n```vue\n<script setup>\nimport { ref, computed } from 'vue'\n\nconst count = ref(0)\nconst doubled = computed(() => count.value * 2)\n\nfunction increment() {\n  count.value++\n}\n</script>\n\n<template>\n  <button @click=\"increment\">\n    Count: {{ count }} (doubled: {{ doubled }})\n  </button>\n</template>\n```\n\n## Teleport\n\nTeleport 允许我们将组件渲染到 DOM 的其他位置：\n\n```vue\n<teleport to=\"body\">\n  <div class=\"modal\">\n    这是一个模态框\n  </div>\n</teleport>\n```\n\n## Fragments\n\nVue 3 支持多个根节点：\n\n```vue\n<template>\n  <header>...</header>\n  <main>...</main>\n  <footer>...</footer>\n</template>\n```\n\n## 总结\n\nVue 3 的这些新特性让开发更加灵活和高效！\n",
+  "readingTime": 1,
+  "wordCount": 145
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@zhiyuxl/create-oexa",
+  "version": "0.1.0",
+  "description": "Create a new Oexa blog project",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "create-oexa": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsx src/index.ts --build-only || esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.0.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.10.13",
+    "@types/prompts": "^2.4.9",
+    "esbuild": "^0.20.0",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3"
+  },
+  "keywords": [
+    "oexa",
+    "blog",
+    "scaffold",
+    "create",
+    "init"
+  ],
+  "author": "",
+  "license": "MIT"
+}

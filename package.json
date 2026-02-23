@@ -1,22 +1,26 @@
 {
-  "name": "oexa",
+  "name": "@zhiyuxl/oexa",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-s generate build:all",
+    "build:all": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
+    "generate": "tsx src/build/generate.ts",
     "lint": "run-s lint:*",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "marked": "^17.0.3",
     "mdui": "^2.1.4",
-    "vue": "beta"
+    "vue": "beta",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
@@ -32,6 +36,7 @@
     "npm-run-all2": "^8.0.4",
     "oxlint": "~1.47.0",
     "prettier": "3.8.1",
+    "tsx": "^4.21.0",
     "typescript": "~5.9.3",
     "vite": "beta",
     "vite-plugin-vue-devtools": "^8.0.6",
