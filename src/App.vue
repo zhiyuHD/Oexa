@@ -8,6 +8,8 @@
   <main>
     <mdui-button>Wow!A Button</mdui-button>
     <p>嗯对，我们有一个MD3 风格的按钮</p>
+    <mdui-button full-width>SecondButton</mdui-button>
+    <p>好的现在有两个了</p>
   </main>
 </template>
 
