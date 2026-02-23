@@ -22,22 +22,22 @@
     },
     {
       "name": "文章",
-      "path": "/posts",
+      "path": "/#/posts",
       "icon": "article"
     },
     {
       "name": "标签",
-      "path": "/tags",
+      "path": "/#/tags",
       "icon": "label"
     },
     {
       "name": "归档",
-      "path": "/archives",
+      "path": "/#/archives",
       "icon": "archive"
     },
     {
       "name": "关于",
-      "path": "/about",
+      "path": "/#/about",
       "icon": "person"
     }
   ],

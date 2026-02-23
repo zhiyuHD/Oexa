@@ -29,10 +29,10 @@ export default {
   // ==================== 导航设置 ====================
   nav: [
     { name: '主页', path: '/', icon: 'home' },
-    { name: '文章', path: '/posts', icon: 'article' },
-    { name: '标签', path: '/tags', icon: 'label' },
-    { name: '归档', path: '/archives', icon: 'archive' },
-    { name: '关于', path: '/about', icon: 'person' },
+    { name: '文章', path: '/#/posts', icon: 'article' },
+    { name: '标签', path: '/#/tags', icon: 'label' },
+    { name: '归档', path: '/#/archives', icon: 'archive' },
+    { name: '关于', path: '/#/about', icon: 'person' },
   ],
 
   // ==================== 社交链接 ====================
@@ -48,7 +48,7 @@ export default {
     // 文章默认布局
     defaultLayout: 'post',
     // 文章链接格式 (:year, :month, :day, :title, :slug, :categories, :hash)
-    permalink: '/posts/:slug',
+    permalink: '/#/posts/:slug',
     // 每页显示文章数
     perPage: 10,
     // 显示阅读时间

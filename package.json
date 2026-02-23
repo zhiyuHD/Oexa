@@ -19,6 +19,7 @@
   "dependencies": {
     "marked": "^17.0.3",
     "mdui": "^2.1.4",
+    "vite-ssg": "^28.3.0",
     "vue": "beta",
     "vue-router": "^4.6.4"
   },
